@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   font-family: "Maven Pro", sans-serif;
-  background-color: azure;
 }
 
 header {
@@ -49,9 +48,10 @@ main .header {
 }
 
 main .content {
-  width: 80%;
-  height: 30rem;
-  margin: 10px auto;
+  width: 100%;
+  height: 29rem;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,15 +60,19 @@ main .content {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-line-pack: center;
-      align-content: center;
 }
 
 main .content .box {
-  width: 18rem;
+  width: 25rem;
   height: 12rem;
-  margin: 10px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 main .content .box img {
