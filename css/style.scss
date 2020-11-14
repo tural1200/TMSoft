@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Maven Pro", sans-serif;
+  background-color: azure;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  .navbar {
+    height: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border-bottom: 2px solid rgb(75, 233, 115);
+
+    .logo {
+      img {
+        width: 160px;
+      }
+    }
+
+    .nav {
+      ul {
+        li {
+          display: inline;
+          margin: 1rem;
+          font-size: 1.2rem;
+          font-weight: 600;
+
+          a {
+            text-decoration: none;
+            color: rgb(99, 177, 244);
+            &:hover {
+              color: rgb(75, 233, 115);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  .header {
+    text-align: center;
+    color: rgb(99, 177, 244);
+  }
+
+  .content {
+    width: 80%;
+    height: 30rem;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+
+    .box {
+      width: 18rem;
+      height: 12rem;
+      margin: 10px;
+      text-align: center;
+
+      img {
+        max-width: 18rem;
+        min-height: 10rem;
+        border: 3px solid rgb(75, 233, 115);
+        border-radius: 10px;
+      }
+
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(99, 177, 244);
+      }
+    }
+  }
+}
+
+footer {
+    border-top: 2px solid rgb(75, 233, 115);
+    
+    div {
+        text-align: center;
+        font-weight: bold;
+        padding-top: 5px;
+        color: rgb(99, 177, 244);
+    }
+}
